@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html style="height:100%;">
+<head>
+<link rel="stylesheet" href="arvore.css" type="text/css">
+<style>
+
+</style>
+<title>PIANO E OUTROS BOTÕES PARA CARREGAR</title>
+</head>
+
+<body onkeydown="Teclado(event)" style="height:100%; margin:0;">
+
+<div style=
+"width:100%;height:100%;background:linear-gradient(-25deg,green,brown,red,yellow)">
+<h1 ALIGN= center style="font-family:Tahoma;color:black;font-size:40px">PIANO E OUTROS BOTÕES PARA CARREGAR</h1>
+
+<audio id="a0" controls style="width:0px" preload="auto">
+<source src="piano/040.wav">
+</audio>
+
+<audio id="a1" controls style="width:0px" preload="auto">
+<source src="piano/041.wav">
+</audio>
+
+<audio id="a2" controls style="width:0px" preload="auto">
+<source src="piano/042.wav">
+</audio>
+
+<audio id="a3" controls style="width:0px" preload="auto">
+<source src="piano/043.wav">
+</audio>
+
+<audio id="a4" controls style="width:0px" preload="auto">
+<source src="piano/044.wav">
+</audio>
+
+<audio id="a5" controls style="width:0px" preload="auto">
+<source src="piano/045.wav">
+</audio>
+
+<audio id="a6" controls style="width:0px" preload="auto">
+<source src="piano/046.wav">
+</audio>
+
+<audio id="a7" controls style="width:0px" preload="auto">
+<source src="piano/047.wav">
+</audio>
+
+<audio id="a8" controls style="width:0px" preload="auto">
+<source src="piano/048.wav">
+</audio>
+
+<audio id="a9" controls style="width:0px" preload="auto">
+<source src="piano/049.wav">
+</audio>
+
+<audio id="a10" controls style="width:0px" preload="auto">
+<source src="piano/050.wav">
+</audio>
+
+<audio id="a11" controls style="width:0px" preload="auto">
+<source src="piano/051.wav">
+</audio>
+
+<audio id="a12" controls style="width:0px" preload="auto">
+<source src="piano/052.wav">
+</audio>
+
+<audio id="a13" controls style="width:0px" preload="auto">
+<source src="piano/053.wav">
+</audio>
+
+<audio id="a14" controls style="width:0px" preload="auto">
+<source src="piano/054.wav">
+</audio>
+
+<audio id="a15" controls style="width:0px" preload="auto">
+<source src="piano/055.wav">
+</audio>
+
+<audio id="a16" controls style="width:0px" preload="auto">
+<source src="piano/056.wav">
+</audio>
+
+<audio id="cancaoNatal1" controls style="width:0px" preload="auto">
+<source src="piano/CancaoNatal1.mp3">
+</audio>
+
+<audio id="cancaoNatal2" controls style="width:0px" preload="auto">
+<source src="piano/CancaoNatal2.mp3">
+</audio>
+
+<div style=
+"width:500px;height:800px;text-align:center;float:left">
+<br>
+
+<button onclick="cancaoNatal1()" style="position:absolute;left:90px;top:150px;width:150px;height:150px">
+  <img src="arvoreNatal.jpg" alt="Canção de Natal 1" style="width:100%;height:80%;">Canção de Natal 1</button>
+<br>
+<button onclick="cancaoNatal2()" style="position:absolute;left:250px;top:150px;width:150px;height:150px">
+  <img src="arvoreNatal.jpg" alt="Canção de Natal 2" style="width:100%;height:80%;">Canção de Natal 2</button>
+<br>
+<button onclick="Pausa()"style="position:absolute;left:410px;top:150px;width:150px;height:150px">Give me a break!</button>
+
+<div class="arvore" style="left:150px"><img src="arvoreNatal.png" style
+    ="width:150px;height:150px"></div>
+
+<br>
+</div>
+
+<div style="position: relative;width:900px;height:800px;text-align:center;float:left">
+<br>
+<button id="pressTecla0" onclick="notaA0()"style="position:absolute;left:120px;top:250px;width:70px;height:220px;background-color:white;color:black;">C1</button>
+<button id="pressTecla2" onclick="notaA2()"style="position:absolute;left:190px;top:250px;width:70px;height:220px;background-color:white;color:black;">D1</button>
+<button id="pressTecla4" onclick="notaA4()"style="position:absolute;left:260px;top:250px;width:70px;height:220px;background-color:white;color:black;">E1</button>
+<button id="pressTecla5" onclick="notaA5()"style="position:absolute;left:330px;top:250px;width:70px;height:220px;background-color:white;color:black;">F1</button>
+<button id="pressTecla7" onclick="notaA7()"style="position:absolute;left:400px;top:250px;width:70px;height:220px;background-color:white;color:black;">G1</button>
+<button id="pressTecla9" onclick="notaA9()"style="position:absolute;left:470px;top:250px;width:70px;height:220px;background-color:white;color:black;">A1</button>
+<button id="pressTecla11" onclick="notaA11()"style="position:absolute;left:540px;top:250px;width:70px;height:220px;background-color:white;color:black;">B1</button>
+<button id="pressTecla12" onclick="notaA12()"style="position:absolute;left:610px;top:250px;width:70px;height:220px;background-color:white;color:black;">C2</button>
+<button id="pressTecla14" onclick="notaA14()"style="position:absolute;left:680px;top:250px;width:70px;height:220px;background-color:white;color:black;">D2</button>
+<button id="pressTecla16" onclick="notaA16()"style="position:absolute;left:750px;top:250px;width:70px;height:220px;background-color:white;color:black;">E2</button>
+<button id="pressTecla1" onclick="notaA1()"style="position:absolute;left:165px;top:250px;width:40px;height:160px;background-color:black;color:white;">C1# D1b</button>
+<button id="pressTecla3" onclick="notaA3()"style="position:absolute;left:245px;top:250px;width:40px;height:160px;background-color:black;color:white;">D1# E1b</button>
+<button id="pressTecla6" onclick="notaA6()"style="position:absolute;left:375px;top:250px;width:40px;height:160px;background-color:black;color:white;">F1# G1b</button>
+<button id="pressTecla8" onclick="notaA8()"style="position:absolute;left:450px;top:250px;width:40px;height:160px;background-color:black;color:white;">G1# A1b</button>
+<button id="pressTecla10" onclick="notaA10()"style="position:absolute;left:525px;top:250px;width:40px;height:160px;background-color:black;color:white;">A1# B1b</button>
+<button id="pressTecla13" onclick="notaA13()"style="position:absolute;left:655px;top:250px;width:40px;height:160px;background-color:black;color:white;">C2# D2b</button>
+<button id="pressTecla15" onclick="notaA15()"style="position:absolute;left:735px;top:250px;width:40px;height:160px;background-color:black;color:white;">D2# E2b</button>
+<br>
+</div>
+<script>
+function notaA0()
+{
+document.getElementById('a0').pause();
+document.getElementById('a0').currentTime=0;
+document.getElementById('a0').play();
+document.getElementById('pressTecla0').style.backgroundColor = 'lightgray';
+setTimeout(function(){ document.getElementById('pressTecla0').style.backgroundColor = 'white'; }, 100);
+}
+
+function notaA1()
+{
+document.getElementById('a1').pause();
+document.getElementById('a1').currentTime=0;
+document.getElementById('a1').play();
+document.getElementById('pressTecla1').style.backgroundColor = 'darkgray';
+setTimeout(function(){ document.getElementById('pressTecla1').style.backgroundColor = 'black'; }, 100);
+}
+
+function notaA2()
+{
+document.getElementById('a2').pause();
+document.getElementById('a2').currentTime=0;
+document.getElementById('a2').play();
+document.getElementById('pressTecla2').style.backgroundColor = 'lightgray';
+setTimeout(function(){ document.getElementById('pressTecla2').style.backgroundColor = 'white'; }, 100);
+}
+
+function notaA3()
+{
+document.getElementById('a3').pause();
+document.getElementById('a3').currentTime=0;
+document.getElementById('a3').play();
+document.getElementById('pressTecla3').style.backgroundColor = 'darkgray';
+setTimeout(function(){ document.getElementById('pressTecla3').style.backgroundColor = 'black'; }, 100);
+}
+
+function notaA4()
+{
+document.getElementById('a4').pause();
+document.getElementById('a4').currentTime=0;
+document.getElementById('a4').play();
+document.getElementById('pressTecla4').style.backgroundColor = 'lightgray';
+setTimeout(function(){ document.getElementById('pressTecla4').style.backgroundColor = 'white'; }, 100);
+}
+
+function notaA5()
+{
+document.getElementById('a5').pause();
+document.getElementById('a5').currentTime=0;
+document.getElementById('a5').play();
+document.getElementById('pressTecla5').style.backgroundColor = 'lightgray';
+setTimeout(function(){ document.getElementById('pressTecla5').style.backgroundColor = 'white'; }, 100);
+}
+
+function notaA6()
+{
+document.getElementById('a6').pause();
+document.getElementById('a6').currentTime=0;
+document.getElementById('a6').play();
+document.getElementById('pressTecla6').style.backgroundColor = 'darkgray';
+setTimeout(function(){ document.getElementById('pressTecla6').style.backgroundColor = 'black'; }, 100);
+}
+
+function notaA7()
+{
+document.getElementById('a7').pause();
+document.getElementById('a7').currentTime=0;
+document.getElementById('a7').play();
+document.getElementById('pressTecla7').style.backgroundColor = 'lightgray';
+setTimeout(function(){ document.getElementById('pressTecla7').style.backgroundColor = 'white'; }, 100);
+}
+
+function notaA8()
+{
+document.getElementById('a8').pause();
+document.getElementById('a8').currentTime=0;
+document.getElementById('a8').play();
+document.getElementById('pressTecla8').style.backgroundColor = 'darkgray';
+setTimeout(function(){ document.getElementById('pressTecla8').style.backgroundColor = 'black'; }, 100);
+}
+
+function notaA9()
+{
+document.getElementById('a9').pause();
+document.getElementById('a9').currentTime=0;
+document.getElementById('a9').play();
+document.getElementById('pressTecla9').style.backgroundColor = 'lightgray';
+setTimeout(function(){ document.getElementById('pressTecla9').style.backgroundColor = 'white'; }, 100);
+}
+
+function notaA10()
+{
+document.getElementById('a10').pause();
+document.getElementById('a10').currentTime=0;
+document.getElementById('a10').play();
+document.getElementById('pressTecla10').style.backgroundColor = 'darkgray';
+setTimeout(function(){ document.getElementById('pressTecla10').style.backgroundColor = 'black'; }, 100);
+}
+
+function notaA11()
+{
+document.getElementById('a11').pause();
+document.getElementById('a11').currentTime=0;
+document.getElementById('a11').play();
+document.getElementById('pressTecla11').style.backgroundColor = 'lightgray';
+setTimeout(function(){ document.getElementById('pressTecla11').style.backgroundColor = 'white'; }, 100);
+}
+
+function notaA12()
+{
+document.getElementById('a12').pause();
+document.getElementById('a12').currentTime=0;
+document.getElementById('a12').play();
+document.getElementById('pressTecla12').style.backgroundColor = 'lightgray';
+setTimeout(function(){ document.getElementById('pressTecla12').style.backgroundColor = 'white'; }, 100);
+}
+
+function notaA13()
+{
+document.getElementById('a13').pause();
+document.getElementById('a13').currentTime=0;
+document.getElementById('a13').play();
+document.getElementById('pressTecla13').style.backgroundColor = 'darkgray';
+setTimeout(function(){ document.getElementById('pressTecla13').style.backgroundColor = 'black'; }, 100);
+}
+
+function notaA14()
+{
+document.getElementById('a14').pause();
+document.getElementById('a14').currentTime=0;
+document.getElementById('a14').play();
+document.getElementById('pressTecla14').style.backgroundColor = 'lightgray';
+setTimeout(function(){ document.getElementById('pressTecla14').style.backgroundColor = 'white'; }, 100);
+}
+
+function notaA15()
+{
+document.getElementById('a15').pause();
+document.getElementById('a15').currentTime=0;
+document.getElementById('a15').play();
+document.getElementById('pressTecla15').style.backgroundColor = 'darkgray';
+setTimeout(function(){ document.getElementById('pressTecla15').style.backgroundColor = 'black'; }, 100);
+}
+
+function notaA16()
+{
+document.getElementById('a16').pause();
+document.getElementById('a16').currentTime=0;
+document.getElementById('a16').play();
+document.getElementById('pressTecla16').style.backgroundColor = 'lightgray';
+setTimeout(function(){ document.getElementById('pressTecla16').style.backgroundColor = 'white'; }, 100);
+}
+
+function cancaoNatal1()
+{
+document.getElementById('cancaoNatal1').pause();
+document.getElementById('cancaoNatal1').currentTime=0;
+document.getElementById('cancaoNatal1').play();
+}
+
+function cancaoNatal2()
+{
+document.getElementById('cancaoNatal2').pause();
+document.getElementById('cancaoNatal2').currentTime=0;
+document.getElementById('cancaoNatal2').play();
+}
+
+function Pausa()
+{
+document.getElementById('cancaoNatal1').pause();
+document.getElementById('cancaoNatal2').pause();
+}
+
+function Teclado(event)
+{
+var key=event.keyCode;
+if (key == 81) notaA0(); //Tecla Q
+if (key == 65) notaA1(); //Tecla A
+if (key == 87) notaA2(); //Tecla W
+if (key == 83) notaA3(); //Tecla S
+if (key == 69) notaA4(); //Tecla E
+if (key == 82) notaA5(); //Tecla R
+if (key == 70) notaA6(); //Tecla F
+if (key == 84) notaA7(); //Tecla T
+if (key == 71) notaA8(); //Tecla G
+if (key == 89) notaA9(); //Tecla Y
+if (key == 72) notaA10(); //Tecla H
+if (key == 85) notaA11(); //Tecla U
+if (key == 73) notaA12(); //Tecla I
+if (key == 75) notaA13(); //Tecla K
+if (key == 79) notaA14(); //Tecla O
+if (key == 76) notaA15(); //Tecla L
+if (key == 80) notaA16(); //Tecla P
+}
+
+</script>
+</div>
+</body></html>
